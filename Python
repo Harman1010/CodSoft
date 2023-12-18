@@ -1,0 +1,34 @@
+def add(x,y):
+    return x + y
+def sub(x,y):
+    return x / y
+def mul(x,y):
+    return x * y
+def div(x,y):
+    return x / y
+print("1.Addition")
+print("2.Subtraction")
+print("3.Multiplication")
+print("4.Division")
+choice=input("Select operation(1,2,3,4) ")
+num1=int(input("Enter a number "))
+num2=int(input("Enter another number "))
+if choice=='1':
+    print("Answer = ",add(num1,num2))
+elif choice=='2':
+    print("Answer = ",sub(num1,num2))
+elif choice=='3':
+    pirint("Answer = ",mul(num1,num2))
+elif choice=='4':
+    print("Answer = ",div(num1,num2))
+else:
+    print("Invalid choice")
+Output
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+Select operation(1,2,3,4) 1
+Enter a number 10
+Enter another number 15
+Answer =  25

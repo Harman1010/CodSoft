@@ -1,0 +1,39 @@
+import random
+while True:
+    a=input("Enter your move ")
+    choiceforcomputer=['rock','paper','scissors']
+    b=random.choice(choiceforcomputer)
+    if a==b:
+        draw=print("Its a draw")
+    elif a=='rock' and b=='paper':
+        lost=print("You lost!")
+    elif a=='paper' and b=='rock':
+        win=print("You win!")
+    elif a=='scissors' and b=='paper':
+        win=print("You win!")
+    elif a=='paper' and b=='scissors':
+        lost=print("You lost!")
+    elif a=='scissors' and b=='rock':
+        lost=print("You lost!")
+    elif a=='rock' and b=='scissors':
+        win=print("You win!")
+    else:
+        print("Invalid move!")
+    try_again=input("Do you want to play again?(yes/no) ")
+    if try_again!='yes':
+        print("Thank you for playing!")
+        break
+
+
+Output
+
+Enter your move rock
+You lost!
+Do you want to play again?(yes/no) yes
+Enter your move scissors
+You win!
+Do you want to play again?(yes/no) yes
+Enter your move paper
+You lost!
+Do you want to play again?(yes/no) no
+Thank you for playing!
